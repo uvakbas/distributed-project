@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "CS 550 Project."
+    return "CS 550 Project..."
     
 @app.route('/test-post',methods = ['POST'])
 def test_post():
