@@ -9,7 +9,7 @@ def hello():
     
 @app.route('/test-post',methods = ['POST'])
 def test_post():
-   return "Post received."
+   return "Received Data: " + json.dumps(request.get_json())
 
 if __name__ == '__main__':
     port = os.environ.get('FLASK_PORT') or 8080
